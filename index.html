@@ -33,7 +33,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="d-flex">
     <nav class="navbar navbar-expand-lg fixed-top ms-auto">
       <div class="container">
         <a class="navbar-brand home-link" href="/index.html"> Baleadas🇭🇳 </a>
@@ -56,10 +56,10 @@
             <a class="nav-link active" aria-current="page" href="/index.html"
               >Home</a
             >
-            <a class="nav-link" href="#">Recipe </a>
-            <a class="nav-link" href="#">Fun fact </a>
-            <a class="nav-link" href="#">About Honduras</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#funfact">Fun fact </a>
+            <a class="nav-link" href="#recipe">Recipe</a>
+            <a class="nav-link" href="#honduras">About Honduras</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -72,52 +72,192 @@
         <p class="subheading">A typical dish from Honduras 🇭🇳</p>
       </div>
 
-      <div class="row mt-5 ">
-      <div class=" col-sm-6 baleadas-info text-center">
-        <h2> What are "Baleadas"?</h2>
-        <p>
-          Baleadas are a typical dish very popular in Honduras. It's made from a
-          flour tortilla, refried beans, sour cream and grated cheese. Baleadas
-          can be filled with anything you want, kind of like a burrito. This are
-          some of the many ways to eat baleadas:
-        </p>
-        <ul>
-          <li>
-            A "Bealeada Sencilla" or Simple Baleada is the classic one with the
-            common ingredients: the fluffy, thick, flour tortilla, refried red
-            beans, sour cream and grated cheese.
-          </li>
-          <li>
-            The Baleada Mixta which includes scrambled eggs and all the classic
-            ingredients, this one of the most popular orders.
-          </li>
-          <li>
-            If you want to go over the top, order a "Baleada con todo" which
-            adds to the previous ingredients avocados and a protein of your
-            choosing which can be chicken, beef, chorizo or pork meat.
-          </li>
-        </ul>
-        <p>
-          Baleadas are found in every corner of the country as street food and
-          in restaurants. You can eat them for any time of the day!
-        </p>
-      </div>
-       <div class="col-sm-6 mt-3">
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/315/original/baleada.jpeg?1685822995"
-          alt="Baleada"
-          width=""
-          class="img-fluid img-thumbnail rounded mx-auto d-block"
-        />
-       
-      </div>
+      <div class="row mt-3 baleada-intro">
+        <div class="col baleadas-info text-center">
+          <h2>What are "Baleadas"?</h2>
+          <div class="col mt-3">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/315/original/baleada.jpeg?1685822995"
+              alt="Baleada"
+              width=""
+              class="img-fluid img-thumbnail rounded mx-auto d-block"
+            />
+          </div>
+          <div class="mt-2">
+            Baleadas are a typical dish very popular in Honduras. A baleada is a
+            variant of soft tacos with a few differences. It is a traditional
+            Honduran food that is made from flour tortilla and folded in half
+            like a taco with a variety of fillings inside. Almost all varieties
+            of the dish have mashed fried red beans and crumbled cheese inside
+            with other ingredients. It originates from the north coast of
+            Honduras. It's made from a flour tortilla, refried beans, sour cream
+            and grated cheese. Baleadas can be filled with anything you want,
+            kind of like a burrito.
+          </div>
+          This are some of the many ways to eat baleadas:
+          <div class="row justify-content-md-center mt-2">
+            <div class="col col-lg-2 baleada-type">
+              A "Bealeada Sencilla" or Simple Baleada is the classic one with
+              the common ingredients: the fluffy, thick, flour tortilla, refried
+              red beans, sour cream and grated cheese.
+            </div>
+            <div class="col col-lg-2 baleada-type text-center">
+              The Baleada Mixta which includes scrambled eggs and all the
+              classic ingredients, this one of the most popular orders.
+            </div>
+            <div class="col col-lg-2 baleada-type">
+              If you want to go over the top, order a "Baleada con todo" which
+              adds to the previous ingredients avocados and a protein of your
+              choosing which can be chicken, beef, chorizo or pork meat.
+            </div>
+          </div>
+          <div class="mt-2">
+            Baleadas are found in every corner of the country as street food and
+            in restaurants. You can eat them for any time of the day!
+          </div>
+        </div>
+
+        <div class="mt-5 order-baleada">
+          <div class="button text-center">
+            <a href="#" class="baleada-button"> Order Baleadas! </a>
+          </div>
+        </div>
       </div>
 
-      <div class="button">
-        <a href="/contact.html" class="baleada-button"> Contact me </a>
+      <div class="fun-fact-baleadas mt-5" id="funfact">
+        <h2>Fun facts about Baleadas</h2>
+        <div class="row mb-3">
+          <div class="col-sm-6 mt-2 d-none d-md-flex">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/735/original/baleadas-la-america-radiohouse-3.jpg?1695242619"
+              class="img-fluid rounded img-thumbnail"
+              alt="Baleada - favorite food project preview"
+            />
+          </div>
+          <div class="col-sm-6 mb-2 d-flex">
+            <p class="me-3">
+              The Baleada name has a lot of myths. The most popular one comes
+              from a lady that sold Baleadas on the streets and one day got
+              involved in a shooting, getting hurt from a bullet, which is
+              "bala" in Spanish. Once she got better en returned to her selling
+              spot on the streets people started calling her the "baleada"
+              meaning "the shot woman". 😅
+            </p>
+          </div>
+          <div class="col-sm-6 text-center d-flex">
+            <p>
+              Another myth comes from many years ago when the recipe was made
+              from boiled beans wraped in the flour tortilla. Once you bite the
+              tortilla the whole beans fall resembling bullets. With time the
+              recipe changed the beans for refried, smashed beans, but the name
+              stood.
+            </p>
+          </div>
+          <div class="col-sm-6 d-none d-md-flex mb-5">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/736/original/ec32ca4ed41d4bde006e3330750271f0--honduras-central-america.jpg?1695242635"
+              class="img-fluid rounded img-thumbnail"
+              alt="Weather application preview"
+            />
+          </div>
+        </div>
       </div>
 
-      <footer>
+      <div class="baleada-recipe" id="recipe">
+        <h2>Make your own baleada!</h2>
+        <div class="text-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ifQ_pMfiiVU?si=IY5589VAH02tl5AT"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div >
+          <p class="mt-3">
+            If you enjoy trying new recipes and improving your cooking skills.
+            Check the above video and try to make your own baleada with
+            home-made flour tortillas and enjoy! <br />
+            If you want your baleadas like the ones in our home page, you can
+            use this ingredient list:
+          </p>
+          <div class="row justify-content-md-center mt-3">
+            <div class="col-sm-3">
+              <h5>For the flour tortillas</h5>
+              <ul>
+                <li>4 c flour</li>
+                <li>1 tsp baking powder</li>
+                <li>1 tsp salt</li>
+                <li>1 - 1 ¼ c milk or water, divided</li>
+                <li>¼ c butter, lard or oil, softened</li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h5>For the baleadas</h5>
+              <ul>
+                <li>Re-fried red beans</li>
+                <li>Sour cream</li>
+                <li>Grated cheese (parmesan)</li>
+                <li>Scrambled eggs</li>
+                <li>Avocado 🥑</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="honduras">
+        <div class="about">
+          <h2>About Honduras</h2>
+          <h5>
+            Before eating this amazing dish, I'll teach you a bit more about my
+            country.
+          </h5>
+          <p>
+            Honduras spans about 112,492 km2 and has a population exceeding 10
+            million. Its northern portions are part of the western Caribbean
+            zone, as reflected in the area's demographics and culture. Honduras
+            is known for its rich natural resources, including minerals, coffee,
+            tropical fruit, and sugar cane, as well as for its growing textiles
+            industry, which serves the international market.
+            <br />
+            <br />
+            White beaches fringed by the world's second-largest barrier reef,
+            jungle-covered mountains cut by raftable white-water rivers and home
+            to an astounding number of bird species, exquisite Maya ruins,
+            colonial, cobblestone villages, fresh seafood grilled on the
+            beaches, you can find all this and more in Honduras!
+          </p>
+        </div>
+        <div class="row justify-content-center mt-2">
+          <div class="col-sm-4 d-none d-md-flex ">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/325/original/Roatan.jpg?1685829433"
+              class="img-fluid rounded img-thumbnail"
+              alt="Honduran beaches"
+            />
+          </div>
+          <div class="col-sm-4 d-none d-md-flex ">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/324/original/hondurasmapa.png?1685829335"
+              class="img-fluid rounded img-thumbnail"
+              alt="Honduran map"
+            />
+          </div>
+          <div class="col-sm-4 d-none d-md-flex ">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/323/original/hond.png?1685829294"
+              class="img-fluid rounded img-thumbnail"
+              alt="Honduran capital, tegucigalpa"
+            />
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="mt-5" id="contact">
         <div class="social-links d-flex justify-content-center mt-3">
           <a
             href="https://github.com/isisb92"
@@ -142,7 +282,7 @@
           </a>
         </div>
 
-        <p class="text-center mt-5" id="email">
+        <p class="text-center mt-2" id="email">
           ✨ This website was coded by Isis Buezo🦖, and is
           <a
             href="https://github.com/isisb92"

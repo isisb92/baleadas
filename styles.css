@@ -1,7 +1,7 @@
 :root {
   --primary-color: #d5eeff;
   --secondary-color: #005689;
-  --third-color: #ff895d;
+  --third-color: rgba(255, 137, 93, 0.3);
   --box-shadow: 5px 10px 30px rgb(0, 0, 0, 0.2);
   --heading-font-family: "Neuton", serif;
   --default-font: "Roboto" sans-serif;
@@ -29,6 +29,12 @@ h2 {
   font-family: var(--heading-font-family);
   font-weight: 500;
   font-size: 50px !important;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  color: var(--secondary-color) !important;
 }
 
 .name {
@@ -37,14 +43,28 @@ h2 {
   font-family: var(--heading-font-family);
 }
 
-
 .header,
-.footer {
+.footer,
+.baleada-type,
+.about {
   background-color: var(--primary-color);
   padding-top: 20px;
-   border-radius: 10px
+  border-radius: 10px;
 }
 
+.about {
+  padding-bottom: 10px;
+}
+
+.baleada-type {
+  margin-left: 2px;
+  margin-right: 4px;
+}
+.fun-fact-baleadas {
+  background-color: var(--third-color);
+  border-radius: 10px;
+  padding-right: 2px;
+}
 .footer {
   padding: 30px 120px;
 }
@@ -53,6 +73,11 @@ h2 {
 .navbar-nav .nav-link.show {
   font-weight: bold !important;
   color: var(--secondary-color) !important;
+ 
+}
+
+.navbar{
+   background-color: white;
 }
 
 .items .nav-link,
@@ -73,7 +98,6 @@ h2 {
   box-shadow: var(--box-shadow) !important;
 }
 
-
 footer .social-links a {
   margin: 0 20px;
   color: var(--secondary-color);
@@ -88,4 +112,15 @@ footer .social-links a {
   text-decoration: none !important;
   color: black !important;
   opacity: 70%;
+}
+
+.d-md-flex {
+  display: flex !important;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
