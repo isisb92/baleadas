@@ -10,7 +10,6 @@
       content="Isis Buezo is a junior front-end developer certified by SheCodes"
     />
 
-    <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +31,133 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <style>
+      :root {
+        --primary-color: #d5eeff;
+        --secondary-color: #005689;
+        --third-color: rgba(255, 137, 93, 0.3);
+        --box-shadow: 5px 10px 30px rgb(0, 0, 0, 0.2);
+        --heading-font-family: "Neuton", serif;
+        --default-font: "Roboto" sans-serif;
+      }
+
+      body {
+        margin-top: 100px !important;
+      }
+
+      img {
+        display: block;
+        max-width: 70% !important;
+      }
+
+      .greeting,
+      .subheading,
+      p {
+        text-align: center;
+        margin: 0;
+        font-family: var(--default-font);
+        margin-bottom: 0 !important;
+        font-weight: 500;
+      }
+      h2 {
+        font-family: var(--heading-font-family);
+        font-weight: 500;
+        font-size: 50px !important;
+        text-align: center;
+      }
+
+      h5 {
+        text-align: center;
+        color: var(--secondary-color) !important;
+      }
+
+      .name {
+        text-align: center;
+        font-size: 80px !important;
+        font-family: var(--heading-font-family);
+      }
+
+      .header,
+      .footer,
+      .baleada-type,
+      .about {
+        background-color: var(--primary-color);
+        padding-top: 20px;
+        border-radius: 10px;
+      }
+
+      .about {
+        padding-bottom: 10px;
+      }
+
+      .baleada-type {
+        margin-left: 2px;
+        margin-right: 4px;
+      }
+      .fun-fact-baleadas {
+        background-color: var(--third-color);
+        border-radius: 10px;
+        padding-right: 2px;
+      }
+      .footer {
+        padding: 30px 120px;
+      }
+
+      .navbar-nav .nav-link.active,
+      .navbar-nav .nav-link.show {
+        font-weight: bold !important;
+        color: var(--secondary-color) !important;
+      }
+
+      .navbar {
+        background-color: white;
+      }
+
+      .items .nav-link,
+      .home-link {
+        color: var(--secondary-color);
+      }
+
+      .baleada-button {
+        color: white !important;
+        background-color: var(--secondary-color) !important;
+        opacity: 100;
+        margin-top: 15px;
+        border: 1px solid var(--secondary-color) !important;
+        padding: 20px !important;
+        margin: 15px !important;
+        border-radius: 4px;
+        text-decoration: none;
+        box-shadow: var(--box-shadow) !important;
+      }
+
+      footer .social-links a {
+        margin: 0 20px;
+        color: var(--secondary-color);
+        background: var(--primary-color);
+        padding: 10px 14px;
+        border-radius: 50%;
+        font-size: 18px;
+        transition: all 100ms ease-in-out;
+      }
+
+      .github-link {
+        text-decoration: none !important;
+        color: black !important;
+        opacity: 70%;
+      }
+
+      .d-md-flex {
+        display: flex !important;
+        justify-content: center;
+      }
+
+      .d-flex {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-content: space-around;
+      }
+    </style>
   </head>
   <body class="d-flex">
     <nav class="navbar navbar-expand-lg fixed-top ms-auto">
@@ -74,7 +200,7 @@
 
       <div class="row mt-3 baleada-intro">
         <div class="col baleadas-info text-center">
-          <h2>What are "Baleadas"?</h2>
+          <h2>What are Baleadas?</h2>
           <div class="col mt-3">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/315/original/baleada.jpeg?1685822995"
@@ -119,7 +245,9 @@
 
         <div class="mt-5 order-baleada">
           <div class="button text-center">
-            <a href="#" class="baleada-button"> Order Baleadas! </a>
+            <button class="baleada-button" id="baleada-button">
+              Order Baleadas!
+            </button>
           </div>
         </div>
       </div>
@@ -176,7 +304,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div >
+        <div>
           <p class="mt-3">
             If you enjoy trying new recipes and improving your cooking skills.
             Check the above video and try to make your own baleada with
@@ -232,28 +360,27 @@
           </p>
         </div>
         <div class="row justify-content-center mt-2">
-          <div class="col-sm-4 d-none d-md-flex ">
+          <div class="col-sm-4 d-none d-md-flex">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/325/original/Roatan.jpg?1685829433"
               class="img-fluid rounded img-thumbnail"
               alt="Honduran beaches"
             />
           </div>
-          <div class="col-sm-4 d-none d-md-flex ">
+          <div class="col-sm-4 d-none d-md-flex">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/324/original/hondurasmapa.png?1685829335"
               class="img-fluid rounded img-thumbnail"
               alt="Honduran map"
             />
           </div>
-          <div class="col-sm-4 d-none d-md-flex ">
+          <div class="col-sm-4 d-none d-md-flex">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/323/original/hond.png?1685829294"
               class="img-fluid rounded img-thumbnail"
               alt="Honduran capital, tegucigalpa"
             />
           </div>
-
         </div>
       </div>
 
@@ -294,5 +421,31 @@
         </p>
       </footer>
     </div>
+    <script>
+      function orderBaleadas() {
+        let name = prompt("Hello! 👋🏼 What is your name?");
+        let country = prompt("In which country are you located? 🌎");
+        country = country.toLowerCase();
+        country = country.trim();
+        if (country === "honduras") {
+          alert(
+            "Awesome! 🇭🇳😎 " +
+              name +
+              ", you can pick your order at the nearest baleada spot."
+          );
+        } else {
+          alert(
+            "Sorry😞 " +
+              name +
+              ", we can't deliver baleadas to " +
+              country +
+              ", but you can check the recipe and make your own! 🇭🇳👩🏻‍🍳🧑🏽‍🍳"
+          );
+        }
+      }
+
+      let orderButton = document.querySelector("#baleada-button");
+      orderButton.addEventListener("click", orderBaleadas);
+    </script>
   </body>
 </html>
